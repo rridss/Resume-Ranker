@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="auth-container">
+    <img id="theme-image" src="{{ url_for('static', filename='Untitled design (1).jpg')}}" alt="Resume Screening Theme">
+    <form id="authForm" method="POST" action='/login'>
+      <h1>Sign-in</h1>
+        <div class="input-group">
+          <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="button-group">
+          <br><br>
+      
+            <input type="submit" value="Submit">
+        </div>
+        <div id="error-message" style="color: red;"></div> <!-- Placeholder for error messages -->
+    </form>
+</div>
+  <script src="{{ url_for('static', filename='your_js_file.js') }}"></script>
+</body>
+</html>

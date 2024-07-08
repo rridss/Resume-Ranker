@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='up.css') }}">
+</head>
+<body>
+    <div class="upload-container">
+        <div class="input-group">
+            <h1>Upload File</h1>
+        </div>
+        <br><br><br>
+        <div class="input-group">
+            <form action="/upload_resume" method="post" enctype="multipart/form-data">
+                <div class="file-input">
+                    <input type="file" name="file" id="file">
+                </div>
+                <br><br><br>
+                <div class="submit-button">
+                    <input type="submit" value="Upload">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
