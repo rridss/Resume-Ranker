@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffd0d7; /* Pink background color */
+}
+
+.upload-container {
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px; /* Increase font size */
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold; /* Bold title */
+    font-size: 35px;
+}
+
+input[type="file"],
+input[type="submit"] {
+    padding: 10px;
+    width: 400px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin-bottom: 10px;
+    border: 1px solid black; /* Black border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: teal; /* Teal background color */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px; /* Increase font size */
+}
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 420px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+}
+
+input[type="submit"]:hover {
+    background-color: darkorange;
+}
+
+input[type="file"]:hover {
+    background-color: darkorange;
+}
+
+.file-label {
+    display: block;
+    margin-bottom: 10px;
+}
